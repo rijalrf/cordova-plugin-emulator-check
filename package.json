@@ -1,0 +1,11 @@
+{
+  "name": "cordova-plugin-emulator-check",
+  "version": "1.0.0",
+  "description": "Deteksi emulator Android (LDPlayer, Nox, MEmu, BlueStacks, AVD, Genymotion).",
+  "cordova": {
+    "id": "cordova-plugin-emulator-check",
+    "platforms": ["android"]
+  },
+  "keywords": ["ecosystem:cordova", "cordova-android", "emulator", "detection"],
+  "license": "MIT"
+}

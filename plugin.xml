@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        id="cordova-plugin-emulator-check"
+        version="1.0.0">
+
+    <name>EmulatorCheck</name>
+    <description>Deteksi emulator Android (termasuk emulator gaming seperti LDPlayer, Nox, MEmu, BlueStacks).</description>
+    <license>MIT</license>
+
+    <js-module src="www/EmulatorCheck.js" name="EmulatorCheck">
+        <clobbers target="EmulatorCheck" />
+    </js-module>
+
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="EmulatorCheck">
+                <param name="android-package" value="com.emulatorcheck.EmulatorCheck" />
+            </feature>
+        </config-file>
+
+        <source-file src="src/android/EmulatorCheck.java" target-dir="src/com/emulatorcheck" />
+    </platform>
+</plugin>
